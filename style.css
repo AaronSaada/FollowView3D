@@ -107,7 +107,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
   z-index: 1;
   padding: 40px 24px 0;
   flex: 1;
