@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FollowView 3D – Matterport</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="phone">
+
+    <!-- NAV -->
+    <nav>
+      <div class="logo">
+        <div class="logo-icon"></div>
+        Follow<span>View 3D</span>
+      </div>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+
+      <!-- Floating decoration -->
+      <div class="shape-deco cube-deco">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" stroke="#1E2D40" stroke-width="3" fill="none"/>
+          <polygon points="50,5 50,50 95,27.5" stroke="#1E2D40" stroke-width="2" fill="none"/>
+          <polygon points="50,5 50,50 5,27.5" stroke="#1E2D40" stroke-width="2" fill="none"/>
+          <polygon points="50,95 50,50 95,72.5" stroke="#1E2D40" stroke-width="2" fill="none"/>
+          <line x1="50" y1="5" x2="50" y2="95" stroke="#1E2D40" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <!-- Triangle decoration -->
+      <div class="shape-deco triangle-deco">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,8 95,88 5,88" stroke="#D4922A" stroke-width="2.5" fill="none"/>
+          <polygon points="50,28 78,78 22,78" stroke="#D4922A" stroke-width="1.5" fill="none"/>
+          <line x1="50" y1="8" x2="50" y2="88" stroke="#D4922A" stroke-width="1" stroke-dasharray="4 4"/>
+        </svg>
+      </div>
+
+      <!-- Circle decoration -->
+      <div class="shape-deco circle-deco">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="44" stroke="#1E2D40" stroke-width="2" fill="none"/>
+          <circle cx="50" cy="50" r="28" stroke="#1E2D40" stroke-width="1.5" fill="none" stroke-dasharray="5 5"/>
+          <circle cx="50" cy="50" r="4" stroke="#1E2D40" stroke-width="1.5" fill="none"/>
+          <line x1="50" y1="6" x2="50" y2="94" stroke="#1E2D40" stroke-width="1" stroke-dasharray="3 6"/>
+          <line x1="6" y1="50" x2="94" y2="50" stroke="#1E2D40" stroke-width="1" stroke-dasharray="3 6"/>
+        </svg>
+      </div>
+      <div class="hero-infos">
+        <p class="hero-eyebrow">Technologie immersive</p>
+        <div>
+            <h1>Découvrez toute la puissance<br>de la technologie</h1>
+
+            <span class="brand-name">
+                <span class="black">MATTER</span><span class="gold">PORT</span>
+            </span>
+        </div>
+
+        <div class="deco-line"></div>
+
+        <ul class="taglines">
+            <li>Immersion totale.</li>
+            <li>Navigation fluide.</li>
+            <li>Visualisation ultra réaliste.</li>
+        </ul>
+      </div>
+
+      <div class="cta-group">
+        <a href="#" class="btn btn-primary">Demandez votre devis</a>
+        <a href="#" class="btn btn-secondary">Découvrez Matterport</a>
+      </div>
+
+    </div>
+
+    <!-- SECTION : QUI SOMMES-NOUS -->
+    <section class="about">
+
+      <!-- Forme déco -->
+      <div class="about-deco-diamond"></div>
+      <div class="about-deco-cross"></div>
+      <div class="about-deco-ring"></div>
+
+      <div class="about-header reveal">
+        <p class="about-eyebrow">Qui sommes-nous</p>
+        <h2 class="about-title">Une histoire<br><span>internationale</span></h2>
+        <p class="about-intro">De l'innovation à l'implantation mondiale, FollowView 3D trace sa route aux côtés des pionniers de la visualisation immersive.</p>
+      </div>
+
+      <!-- Connexion Maroc ↔ France -->
+      <div class="about-map reveal-scale">
+        <svg id="geo-map" viewBox="0 0 340 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="clip-ma">
+              <circle cx="72" cy="82" r="42"/>
+            </clipPath>
+            <clipPath id="clip-fr">
+              <circle cx="268" cy="82" r="42"/>
+            </clipPath>
+            <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%"   stop-color="#D4922A" stop-opacity="0.9"/>
+              <stop offset="50%"  stop-color="#D4922A" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#D4922A" stop-opacity="0.9"/>
+            </linearGradient>
+            <marker id="arr-r" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+              <path d="M 0,0 L 7,3 L 0,6 Z" fill="#D4922A"/>
+            </marker>
+            <marker id="arr-l" markerWidth="7" markerHeight="7" refX="2" refY="3" orient="auto-start-reverse">
+              <path d="M 7,0 L 0,3 L 7,6 Z" fill="#D4922A"/>
+            </marker>
+          </defs>
+
+          <!-- === MAROC === -->
+          <!-- Nom au-dessus -->
+          <text x="72" y="22" font-size="14" font-weight="700" fill="rgba(30,45,64,0.75)"
+            font-family="Barlow Condensed, sans-serif" text-anchor="middle" letter-spacing="2">MAROC</text>
+
+          <!-- Cercle + drapeau clipé -->
+          <image href="./assets/images/Maroc.png" x="30" y="40" width="84" height="84" clip-path="url(#clip-ma)" preserveAspectRatio="xMidYMid slice"/>
+          <!-- Contour du cercle -->
+          <circle cx="72" cy="82" r="42" stroke="rgba(30,45,64,0.15)" stroke-width="1.5"/>
+
+          <!-- Texte sous le rond -->
+          <text x="72" y="152" font-size="20" fill="rgba(30,45,64,0.45)" font-family="Barlow, sans-serif" text-anchor="middle">Partenaire</text>
+          <text x="72" y="176" font-size="20" fill="rgba(30,45,64,0.45)" font-family="Barlow, sans-serif" text-anchor="middle">fondateur</text>
+
+          <!-- === LIGNE ANIMÉE (entre les bords des cercles) === -->
+          <!-- De x=116 (72+44) à x=224 (268-44), y=72 pour arc au-dessus -->
+          <path id="conn-path"
+            d="M 122,78 C 152,50 188,50 218,78"
+            stroke="url(#line-grad)"
+            stroke-width="1.8"
+            stroke-dasharray="5 4"
+            fill="none"
+            marker-end="url(#arr-r)"
+          />
+
+          <!-- Particule voyageuse -->
+          <circle r="3" fill="#D4922A">
+            <animateMotion dur="2s" repeatCount="indefinite">
+              <mpath href="#conn-path"/>
+            </animateMotion>
+            <animate attributeName="opacity" dur="2s" repeatCount="indefinite"
+              values="0;1;1;0;0" keyTimes="0;0.05;0.85;0.93;1"/>
+          </circle>
+
+          <!-- Badge EXPANSION -->
+          <rect x="143" y="30" width="54" height="17" rx="8"
+            fill="rgba(212,146,42,0.12)" stroke="rgba(212,146,42,0.35)" stroke-width="1"/>
+          <text x="170" y="42" font-size="8" font-weight="700" fill="#D4922A"
+            font-family="Barlow Condensed, sans-serif" text-anchor="middle" letter-spacing="1">EXPANSION</text>
+
+          <!-- === FRANCE === -->
+          <!-- Nom au-dessus -->
+          <text x="268" y="22" font-size="14" font-weight="700" fill="rgba(30,45,64,0.75)"
+            font-family="Barlow Condensed, sans-serif" text-anchor="middle" letter-spacing="2">FRANCE</text>
+
+          <!-- Drapeau tricolore clipé dans cercle -->
+          <rect x="226" y="40" width="28" height="84" fill="#002395" clip-path="url(#clip-fr)"/>
+          <rect x="254" y="40" width="28" height="84" fill="white" clip-path="url(#clip-fr)"/>
+          <rect x="282" y="40" width="28" height="84" fill="#ED2939" clip-path="url(#clip-fr)"/>
+          <!-- Contour -->
+          <circle cx="268" cy="82" r="42" stroke="rgba(30,45,64,0.15)" stroke-width="1.5"/>
+
+          <!-- Texte sous le rond -->
+          <text x="268" y="152" font-size="20" fill="rgba(30,45,64,0.45)" font-family="Barlow, sans-serif" text-anchor="middle">Nouveau</text>
+          <text x="268" y="176" font-size="20" fill="rgba(30,45,64,0.45)" font-family="Barlow, sans-serif" text-anchor="middle">marché</text>
+
+        </svg>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left" style="transition-delay: 0.1s">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Pionnier</span>
+            <h3>Collaboration avec les précurseurs</h3>
+            <p>Dès les premières heures de la technologie Matterport, FollowView 3D s'associe aux acteurs qui façonnent l'avenir de la visualisation immersive.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="transition-delay: 0.25s">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Expansion</span>
+            <h3>Implantation au Maroc</h3>
+            <p>Partenariat stratégique avec une structure locale de référence, positionnant FollowView 3D comme acteur clé de l'immobilier immersif en Afrique du Nord.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="transition-delay: 0.4s">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-tag gold">Aujourd'hui</span>
+            <h3>Arrivée en France</h3>
+            <p>Fort de cette expérience internationale, FollowView 3D s'implante désormais en France, portant une vision globale au service des professionnels locaux.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SECTION : NOS RÉALISATIONS -->
+    <section class="portfolio">
+
+      <div class="portfolio-deco-circle"></div>
+      <div class="portfolio-deco-dots"></div>
+      <div class="portfolio-deco-line"></div>
+
+      <div class="portfolio-header reveal">
+        <p class="portfolio-eyebrow">Nos Réalisations</p>
+        <h2 class="portfolio-title">Des espaces<br><span>repensés en 3D</span></h2>
+        <p class="portfolio-intro">Chaque projet est une nouvelle immersion. Découvrez quelques-unes de nos réalisations Matterport à travers le monde.</p>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="project-card reveal" style="transition-delay: 0.05s">
+          <div class="card-image">
+            <div class="card-img-placeholder" style="background: linear-gradient(135deg, #2C3E50 0%, #4a6278 100%)">
+              <svg viewBox="0 0 80 60" fill="none"><rect x="8" y="20" width="30" height="32" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><rect x="22" y="30" width="10" height="22" rx="1" fill="rgba(255,255,255,0.15)"/><polygon points="8,20 23,8 38,20" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none"/><rect x="44" y="28" width="28" height="24" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><rect x="50" y="34" width="7" height="10" rx="1" fill="rgba(255,255,255,0.1)"/><rect x="61" y="34" width="7" height="10" rx="1" fill="rgba(255,255,255,0.1)"/><polygon points="44,28 58,18 72,28" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <span class="card-tag">Résidentiel</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location">
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M5 0C2.8 0 1 1.8 1 4c0 3 4 8 4 8s4-5 4-8c0-2.2-1.8-4-4-4z" fill="var(--gold)"/><circle cx="5" cy="4" r="1.5" fill="white"/></svg>
+              Casablanca, Maroc
+            </div>
+            <h3 class="card-title">Villa Anfa Heights</h3>
+            <p class="card-desc">Visite virtuelle complète d'une villa contemporaine de 380m² avec piscine, permettant aux acquéreurs de découvrir chaque espace à distance.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.15s">
+          <div class="card-image">
+            <div class="card-img-placeholder" style="background: linear-gradient(135deg, #3d2b1f 0%, #7a5230 100%)">
+              <svg viewBox="0 0 80 60" fill="none"><rect x="5" y="15" width="70" height="38" rx="2" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/><line x1="5" y1="30" x2="75" y2="30" stroke="rgba(255,255,255,0.15)" stroke-width="1"/><rect x="12" y="34" width="12" height="16" rx="1" fill="rgba(255,255,255,0.1)"/><rect x="34" y="34" width="12" height="16" rx="1" fill="rgba(255,255,255,0.1)"/><rect x="56" y="34" width="12" height="16" rx="1" fill="rgba(255,255,255,0.1)"/><rect x="28" y="18" width="24" height="10" rx="1" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none"/></svg>
+            </div>
+            <span class="card-tag">Commerce</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location">
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M5 0C2.8 0 1 1.8 1 4c0 3 4 8 4 8s4-5 4-8c0-2.2-1.8-4-4-4z" fill="var(--gold)"/><circle cx="5" cy="4" r="1.5" fill="white"/></svg>
+              Marrakech, Maroc
+            </div>
+            <h3 class="card-title">Riad Dar Zitoun</h3>
+            <p class="card-desc">Numérisation 3D d'un riad historique reconverti en boutique-hôtel, valorisant l'architecture traditionnelle pour une clientèle internationale.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.25s">
+          <div class="card-image">
+            <div class="card-img-placeholder" style="background: linear-gradient(135deg, #1a2a3a 0%, #2d5a7a 100%)">
+              <svg viewBox="0 0 80 60" fill="none"><rect x="20" y="8" width="40" height="44" rx="2" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/><rect x="26" y="14" width="10" height="10" rx="1" fill="rgba(255,255,255,0.1)"/><rect x="44" y="14" width="10" height="10" rx="1" fill="rgba(255,255,255,0.1)"/><rect x="26" y="30" width="10" height="10" rx="1" fill="rgba(255,255,255,0.1)"/><rect x="44" y="30" width="10" height="10" rx="1" fill="rgba(255,255,255,0.1)"/><rect x="32" y="44" width="16" height="8" rx="1" fill="rgba(255,255,255,0.15)"/><line x1="5" y1="52" x2="75" y2="52" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/></svg>
+            </div>
+            <span class="card-tag">Bureaux</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location">
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M5 0C2.8 0 1 1.8 1 4c0 3 4 8 4 8s4-5 4-8c0-2.2-1.8-4-4-4z" fill="var(--gold)"/><circle cx="5" cy="4" r="1.5" fill="white"/></svg>
+              Paris, France
+            </div>
+            <h3 class="card-title">Tour Lumière – Espace 9</h3>
+            <p class="card-desc">Modélisation immersive de 650m² de bureaux premium pour faciliter la location à distance d'un plateau entier en plein cœur de La Défense.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay: 0.35s">
+          <div class="card-image">
+            <div class="card-img-placeholder" style="background: linear-gradient(135deg, #2a3a1a 0%, #4a7a2d 100%)">
+              <svg viewBox="0 0 80 60" fill="none"><path d="M10 50 Q20 20 40 15 Q60 20 70 50" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><rect x="28" y="28" width="24" height="20" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none"/><rect x="34" y="36" width="12" height="12" rx="1" fill="rgba(255,255,255,0.15)"/><polygon points="28,28 40,18 52,28" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none"/><circle cx="62" cy="20" r="6" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none"/><line x1="62" y1="14" x2="62" y2="10" stroke="rgba(255,255,255,0.2)" stroke-width="1"/></svg>
+            </div>
+            <span class="card-tag">Hôtellerie</span>
+          </div>
+          <div class="card-body">
+            <div class="card-location">
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><path d="M5 0C2.8 0 1 1.8 1 4c0 3 4 8 4 8s4-5 4-8c0-2.2-1.8-4-4-4z" fill="var(--gold)"/><circle cx="5" cy="4" r="1.5" fill="white"/></svg>
+              Agadir, Maroc
+            </div>
+            <h3 class="card-title">Resort Océan Bleu</h3>
+            <p class="card-desc">Visite 3D complète d'un resort 5 étoiles — chambres, piscines, restaurants — offrant une expérience de réservation inédite aux voyageurs du monde entier.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SECTION : CONTACT -->
+    <section class="contact">
+
+      <!-- Décos fond -->
+      <div class="contact-deco-circle"></div>
+      <div class="contact-deco-diamond"></div>
+
+      <div class="contact-header reveal">
+        <p class="contact-eyebrow">Parlons de votre projet</p>
+        <h2 class="contact-title">Demandez votre<br><span>devis gratuit</span></h2>
+        <p class="contact-intro">Une question ? Un projet immobilier à numériser ? Laissez-nous vos coordonnées et nous vous recontactons sous 24h.</p>
+      </div>
+
+      <form class="contact-form reveal" style="transition-delay: 0.1s" novalidate>
+
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Jean Dupont" autocomplete="off"/>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jean@exemple.com"/>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+33 6 00 00 00 00"/>
+        </div>
+
+        <div class="form-group">
+          <label for="type">Type de bien</label>
+          <div class="select-wrapper">
+            <select id="type" name="type">
+              <option value="" disabled selected>Sélectionnez un type</option>
+              <option>Appartement</option>
+              <option>Maison / Villa</option>
+              <option>Local commercial</option>
+              <option>Bureaux</option>
+              <option>Hôtel / Resort</option>
+              <option>Autre</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet en quelques mots..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          <span>Envoyer ma demande</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+      </form>
+
+    </section>
+
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
